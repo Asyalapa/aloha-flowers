@@ -1,0 +1,66 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    
+    // 📁 Базовые настройки
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "types": ["vite/client"],
+    
+    // 🔥 Настройка путей 
+    "paths": {
+      // 📁 Корневые алиасы
+      "@/*": ["./src/*"],
+      "@public/*": ["./public/*"],
+      
+      // 📂 src/ 
+      "@js/*": ["./src/js/*"],
+      "@components/*": ["./src/components/*"],
+      "@less/*": ["./src/less/*"],
+      
+      // 📂 js/ 
+      "@modules/*": ["./src/js/modules/*"],
+      "@utils/*": ["./src/js/utils/*"],
+      
+      // 📂 less/ 
+      "@base/*": ["./src/less/base/*"],
+      "@blocks/*": ["./src/less/blocks/*"],
+      "@layout/*": ["./src/less/layout/*"],
+      "@pages/*": ["./src/less/pages/*"],
+      "@utilities/*": ["./src/less/utilities/*"],
+      
+      // 📂 public/ 
+      "@fonts/*": ["./public/fonts/*"],
+      "@icons/*": ["./public/icons/*"],
+      "@images/*": ["./public/images/*"],
+      
+      // 📂 public/images/ 
+      "@banners/*": ["./public/images/banners/*"],
+      "@flowers/*": ["./public/images/flowers/*"],
+      "@reviews/*": ["./public/images/reviews/*"],
+      "@delivery/*": ["./public/images/delivery/*"],
+      
+      // 📂 src/assets/ 
+      "@assets/*": ["./src/assets/*"],
+      "@svg/*": ["./src/assets/svg/*"]
+    }
+  },
+  
+  // 📂 Включаем
+  "include": [
+    "src/**/*",
+    "public/**/*",
+    "vite.config.js",
+    "eslint.config.js"
+  ],
+  
+  // 🚫 Исключаем
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".vite"
+  ]
+}
